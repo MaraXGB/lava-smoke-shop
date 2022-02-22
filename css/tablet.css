@@ -1,0 +1,53 @@
+.header--background{
+    width: 100%;
+    max-height: 400px;
+    min-width: 425px;
+    max-width: 1700px;
+    margin-top: 40px;
+    background: url("../assets/imgs/banner/lss-banner-pc.png") center/cover no-repeat;
+}
+.main--specialities-container::after{
+    height: 490px;
+    top: 97%;
+}
+.main--about-container{
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.main--contact-us{
+    margin-top: 400px;
+}
+.map-responsive iframe{
+    width: 95%;
+}
+.footer--info-container{
+    flex-basis: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.footer--info-container p{
+    font-size: 1.4rem;
+}
+.footer--info{
+    width: 25%;
+}
+
+/* .find-us-container{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.find-us-content{
+    width: 30%;
+    margin: 0;
+}
+.map-responsive{
+    width: 50%;
+    height: 80px;
+    margin: 0;
+    margin-right: 30px;
+} */

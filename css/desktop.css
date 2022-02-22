@@ -1,0 +1,123 @@
+.header--title-container {
+    width: 100%;
+    min-width: 750px;
+    max-width: 1700px;
+    height: auto;
+}
+.header--background{
+    width: 100%;
+    max-height: 580px;
+    min-width: 425px;
+    max-width: 1700px;
+    margin-top: 40px;
+    background: url("../assets/imgs/banner/lss-banner-pc.png") center/cover no-repeat;
+}
+.main--about-container{
+    flex-direction: row;
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+.main--about-container .main--about-container--content{
+    padding: 0 40px;
+}
+.main--about-container--content h3{
+
+    font-size: 2.6rem;
+}
+.main--about-container--content span{
+    font-size: 3.8rem;
+
+}
+.main--about-container--content p{
+
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+
+}
+.main--about-container--content h2{
+
+    font-size: 3.6rem;
+}
+.main--about-imgs{
+justify-content: flex-start;
+   align-items: center;
+}
+.main--about-imgs .backgroundWh{
+  width: 260px;
+  height:260px;
+  margin-bottom: 50px;
+  margin-left: 10px;
+}
+.main--about-imgs .backgroundBl{
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    left: calc(70% - 80px);
+    top: 170px;
+}
+.main--product-categories{
+    margin: 0 50px;
+    margin-bottom: 50px;
+}
+.main--specialities-container{
+    
+    background: url("../assets/imgs/1080px/fondo_lava_base.png") center/cover no-repeat;
+    height: 664px;
+}
+.main--specialities-container::after{
+    
+    background: url("../assets/imgs/1080px/fondo_lava_after.png") center/cover no-repeat;
+    height: 846px;
+    top: 96%;
+}
+.cards--container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    margin: 0 auto;
+}
+.top-seller--card{
+    width: 300px;
+}
+.main--contact-us{
+    margin-top: 800px;
+}
+.main--contact-us h3{
+    font-size: 2.6rem;
+
+}
+.main--contact-us h1{
+    font-size: 3.2rem;
+
+}
+.main--contact-us h1 span{
+   font-size: 3.2rem;
+}
+.map-responsive iframe{
+    width: 100%;
+}
+.main--contact-us h2{
+    font-size: 2.8rem;
+}
+.main--contact-us p{
+    font-size: 2.2rem;
+}
+.find-us-container{
+    width: 80%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin: 0 auto;
+}
+.find-us-content{
+    align-self: center;
+    width: 50%;
+    margin: 0;
+}
+.map-responsive{
+    width: 50%;
+    height: auto;
+    border-radius:  20px;
+}
+
+  

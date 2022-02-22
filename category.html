@@ -5,13 +5,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LSS-Categories</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">   
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./assets/imgs/icons/fontawesome-free-6.0.0-web/css/all.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width:540px)">
+    <link rel="stylesheet" href="./css/desktop.css" media="(min-width:750px)">
 </head>
 <body>
-    <main>
+  <header>
+
+    <nav class="navbar navbar-default navbar-fixed-top bk-main">
+    <div class="container-fluid header--nav-container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand ml-2 p-0" href="index.html">
+            <img alt="Brand" src="./assets/imgs/640px/LETRAS.png">
+        </a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+            <li><a href="index.html#about-us">About</a></li>
+            <li><a href="index.html#offers">Offers</a></li>
+            <li><a href="index.html#top-sellers">Top Sellers</a></li>
+            <li class="dropdown">
+            <a href="category.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="category.html?category=disposables">Disposables</a></li>
+                <li><a href="category.html?category=cbd">CBD</a></li>
+                <li><a href="category.html?category=thc">THC - delta 8</a></li>
+                <li><a href="category.html?category=kradom">Kradom</a></li>
+                <li><a href="category.html?category=edibles">Edibles</a></li>
+                <li><a href="category.html?category=glass">Glass</a></li>
+                <li><a href="category.html?category=vapes">Vapes</a></li>
+                <li><a href="category.html?category=trays">Trays</a></li>
+                <li><a href="category.html?category=torches">Torches</a></li>
+                <li><a href="category.html?category=cigars">Cigars</a></li>
+                <li><a href="category.html?category=rolling-paper">Rolling Paper</a></li>
+                <li><a href="category.html?category=vape-juices">Vape Juices</a></li>
+                <li><a href="category.html?category=hookah">Hookah</a></li>
+                <li><a href="category.html?category=clothing">Clothing</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="category.html?category=accesories">Accesories</a></li>
+            </ul>
+            </li>
+            <li><a href="index.html#find-us">Find us</a></li>
+        </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+    </nav>            
+        
+         <div class="header--title-container">
+            <!-- <h3>WELCOME TO LAVA SMOKE SHOP!</h3>
+            <h1>Exclusive vaporizers. Vape accesories. Hookahs. and more</h1> -->
+            <span class="header--background"></span>
+            <!-- <a href="category.html?category=hookah" class="header--button-visit">Visit us!</a> -->
+        </div> 
+    </header>
+     <main>
         <section class="section--single-category">
         <h1>CATEGORY</h1>
+       
+        <!-- <div id="posts" class="text-center row no-gutter">
+          <div class="item hookah col-sm-12 col-md-6 col-lg-3">
+            <span class="item-wrap">
+              <span class="title-font">HOOKAH - BLUE</span>
+              <img class="img-fluid" src="./assets/imgs/products/hookah/hookah_blue.jpg">
+            </span>
+          </div>
+          <div class="item hookah col-sm-12 col-md-6 col-lg-3">
+            <span class="item-wrap">
+              <span class="title-font">HOOKAH - BLUE LABEL</span>
+              <img class="img-fluid" src="./assets/imgs/products/hookah/hookah_blue_label.jpg">
+            </span>
+          </div>
+          <div class="item hookah col-sm-12 col-md-6 col-lg-3">
+            <span class="item-wrap">
+              <span class="title-font">HOOKAH - FLAVOR INDIVIDUAL</span>
+              <img class="img-fluid" src="./assets/imgs/products/hookah/hookah_flavor_individual.jpg">
+            </span>
+          </div>
+          <div class="item hookah col-sm-12 col-md-6 col-lg-3">
+            <span class="item-wrap">
+              <span class="title-font">HOOKAH - FLAVORS</span>
+              <img class="img-fluid" src="./assets/imgs/products/hookah/hookah_flavors.jpg">
+            </span>
+          </div>
+      </div>
+      </section> -->
         <div id="posts" class="text-center row no-gutter">
             <div class="item hookah col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
               <span class="item-wrap">
@@ -361,76 +450,76 @@
                   <img class="img-fluid" src="./assets/imgs/products/clothing/clothing_tshirt_raw.jpg">
                 </span>
               </div>
-              <div class="item disponsables col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+              <div class="item disposables col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
                 <span class="item-wrap">
-                  <span class="title-font">DISPONSABLES - AIR BAR VARIETY</span>
-                  <img class="img-fluid" src="./assets/imgs/products/disponsables/disponsables_air_bar_variety.jpg">
+                  <span class="title-font">disposables - AIR BAR VARIETY</span>
+                  <img class="img-fluid" src="./assets/imgs/products/disposables/disposables_air_bar_variety.jpg">
                 </span>
               </div>
-              <div class="item disponsables col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+              <div class="item disposables col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
                 <span class="item-wrap">
-                  <span class="title-font">DISPONSABLES - AIR BAR VARIETY</span>
-                  <img class="img-fluid" src="./assets/imgs/products/disponsables/disponsables_air_bar_variety_2.jpg">
+                  <span class="title-font">disposables - AIR BAR VARIETY</span>
+                  <img class="img-fluid" src="./assets/imgs/products/disposables/disposables_air_bar_variety_2.jpg">
                 </span>
               </div>
-              <div class="item disponsables col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+              <div class="item disposables col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
                 <span class="item-wrap">
-                  <span class="title-font">DISPONSABLES - AME VARIETY</span>
-                  <img class="img-fluid" src="./assets/imgs/products/disponsables/disponsables_ame_variety.jpg">
+                  <span class="title-font">disposables - AME VARIETY</span>
+                  <img class="img-fluid" src="./assets/imgs/products/disposables/disposables_ame_variety.jpg">
                 </span>
               </div>
-              <div class="item disponsables col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+              <div class="item disposables col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
                 <span class="item-wrap">
-                  <span class="title-font">DISPONSABLES - AME VARIETY</span>
-                  <img class="img-fluid" src="./assets/imgs/products/disponsables/disponsables_ame_variety_2.jpg">
+                  <span class="title-font">disposables - AME VARIETY</span>
+                  <img class="img-fluid" src="./assets/imgs/products/disposables/disposables_ame_variety_2.jpg">
                 </span>
               </div>
-              <div class="item disponsables col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+              <div class="item disposables col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
                 <span class="item-wrap">
-                  <span class="title-font">DISPONSABLES - CALI ULTRA VARIETY</span>
-                  <img class="img-fluid" src="./assets/imgs/products/disponsables/disponsables_cali_ultra_variety.jpg">
+                  <span class="title-font">disposables - CALI ULTRA VARIETY</span>
+                  <img class="img-fluid" src="./assets/imgs/products/disposables/disposables_cali_ultra_variety.jpg">
                 </span>
               </div>
-              <div class="item disponsables col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+              <div class="item disposables col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
                 <span class="item-wrap">
-                  <span class="title-font">DISPONSABLES - CALI XXL VARIETY</span>
-                  <img class="img-fluid" src="./assets/imgs/products/disponsables/disponsables_cali_xxl_variety.jpg">
+                  <span class="title-font">disposables - CALI XXL VARIETY</span>
+                  <img class="img-fluid" src="./assets/imgs/products/disposables/disposables_cali_xxl_variety.jpg">
                 </span>
               </div>
-              <div class="item disponsables col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+              <div class="item disposables col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
                 <span class="item-wrap">
-                  <span class="title-font">DISPONSABLES - CULVIE PLUES VARIETY</span>
-                  <img class="img-fluid" src="./assets/imgs/products/disponsables/disponsables_culvie_plus_variety.jpg">
+                  <span class="title-font">disposables - CULVIE PLUES VARIETY</span>
+                  <img class="img-fluid" src="./assets/imgs/products/disposables/disposables_culvie_plus_variety.jpg">
                 </span>
               </div>
-              <div class="item disponsables col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+              <div class="item disposables col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
                 <span class="item-wrap">
-                  <span class="title-font">DISPONSABLES - D-SALT VARIETY</span>
-                  <img class="img-fluid" src="./assets/imgs/products/disponsables/disponsables_d_salt_variety.jpg">
+                  <span class="title-font">disposables - D-SALT VARIETY</span>
+                  <img class="img-fluid" src="./assets/imgs/products/disposables/disposables_d_salt_variety.jpg">
                 </span>
               </div>
-              <div class="item disponsables col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+              <div class="item disposables col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
                 <span class="item-wrap">
-                  <span class="title-font">DISPONSABLES - HYDE VARIETY</span>
-                  <img class="img-fluid" src="./assets/imgs/products/disponsables/disponsables_hyde_variety.jpg">
+                  <span class="title-font">disposables - HYDE VARIETY</span>
+                  <img class="img-fluid" src="./assets/imgs/products/disposables/disposables_hyde_variety.jpg">
                 </span>
               </div>
-              <div class="item disponsables col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+              <div class="item disposables col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
                 <span class="item-wrap">
-                  <span class="title-font">DISPONSABLES - HYDE VARIETY</span>
-                  <img class="img-fluid" src="./assets/imgs/products/disponsables/disponsables_hyde_variety_2.jpg">
+                  <span class="title-font">disposables - HYDE VARIETY</span>
+                  <img class="img-fluid" src="./assets/imgs/products/disposables/disposables_hyde_variety_2.jpg">
                 </span>
               </div>
-              <div class="item disponsables col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+              <div class="item disposables col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
                 <span class="item-wrap">
-                  <span class="title-font">DISPONSABLES - HYDE VARIETY</span>
-                  <img class="img-fluid" src="./assets/imgs/products/disponsables/disponsables_hyde_variety_3.jpg">
+                  <span class="title-font">disposables - HYDE VARIETY</span>
+                  <img class="img-fluid" src="./assets/imgs/products/disposables/disposables_hyde_variety_3.jpg">
                 </span>
               </div>
-              <div class="item disponsables col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+              <div class="item disposables col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
                 <span class="item-wrap">
-                  <span class="title-font">DISPONSABLES - INFINITY VARIETY</span>
-                  <img class="img-fluid" src="./assets/imgs/products/disponsables/disponsables_infinity_variety.jpg">
+                  <span class="title-font">disposables - INFINITY VARIETY</span>
+                  <img class="img-fluid" src="./assets/imgs/products/disposables/disposables_infinity_variety.jpg">
                 </span>
               </div>
               <div class="item edibles col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
@@ -746,18 +835,52 @@
                 </span>
               </div>
         </div>
-        </section>
-    </main>
-    <script src="./js/jquery-2.2.4.min.js"></script>
+        </section> 
+    </main> 
+    <footer>
+      <div class="footer--contact-container">
+          <a class="footer--button" href=""><span>CONTACT US!</span></a>
+          <p>Follow Us on Social Media</p>
+          <div class="footer--social-icons">
+              <a href="mailto:saloua.amane@hotmail.com"><i class="fa-brands fa-3x fa-solid fa-square-envelope"></i></a>
+              <a href="https://www.instagram.com/lava.smokeshop/"><i class="fa-brands fa-3x fa-instagram-square"></i></a>
+              <a href="https://api.whatsapp.com/send?phone=14074608311"><i class="fa-brands fa-3x fa-whatsapp-square"></i></a>
+          </div>
+      </div>
+      <div class="footer--info-container">
+          <div class="footer--info">
+              <i class="fa-solid fa-2x fa-location-dot"></i>
+              <p>5807 s orange blossom trail Orlando, FL 32839</p>
+          </div>
+          <div class="footer--info"> 
+              <i class="fa-solid fa-2x fa-square-envelope"></i>
+              <p>saloua.amane@hotmail.com</p>
+          </div>
+          <div class="footer--info"> 
+              <i class="fa-solid fa-2x fa-phone"></i>
+              <p>+1 (407) 460-8311</p>
+          </div>
+          <div class="footer--info bk-red"> 
+          <div class="footer--social-icons">
+              <a href="mailto:saloua.amane@hotmail.com"><i class="fa-brands fa-3x fa-solid fa-square-envelope"></i></a>
+              <a href="https://www.instagram.com/lava.smokeshop/"><i class="fa-brands fa-3x fa-instagram-square"></i></a>
+              <a href="https://api.whatsapp.com/send?phone=14074608311"><i class="fa-brands fa-3x fa-whatsapp-square"></i></a>
+          </div>    
+          <p><i class="fa-regular fa-copyright"></i> Lava Smoke Shop. Created for Nexdevus-Ing.Edmara Guerrero</p>
+          </div>
+      </div>
+  </footer>
+  <script src="./js/jquery-2.2.4.min.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  -->
     <script src="./js/jquery.appear.min.js"></script>
     <script src="./js/jquery.easypiechart.min.js"></script> 
-    <script src="./js/isotope.pkgd.min.js"></script>
+    <script src="./js/isotope.pkgd.min.js"></script> 
 
     <script>
         arranque();
         function arranque() {
             let cat = capturarArticuloFormURL();
-            $("h1").html(cat);
+            $("h1").html("CATEGORY - " + cat.toUpperCase());
             let filterValue = "."+cat;
             var $container = $('#posts').isotope({
                 itemSelector : '.item',

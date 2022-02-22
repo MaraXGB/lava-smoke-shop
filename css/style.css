@@ -22,33 +22,62 @@
     margin:0;
     padding:0;
 }
+@font-face {
+    font-family: "black-carrot";
+    src: url("../assets/fonts/black-carrot/black_carrot.ttf");
+}
+@font-face {
+    font-family: "bariolregular";
+    src: url("../assets/fonts/Bariol-Regular&Italic/Webfont/Bariol-Regular-Webfont/bariol_regular-webfont.ttf");
+}
 html{
     font-size: 62.5%;
-    /*font-size: */
+    font-family: "bariolregular", sans-serif; 
+}
+.bariol-font {
+   font-family: "bariolregular", sans-serif;
+}
+.carrot-font {
+    font-family: "black-carrot",sans-serif;
 }
 /*HEADER*/
  header{
-    /* position: relative;
-    display: flex;
+    position: relative;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     min-width: 350px;
     height: 334px;
     text-align: center; */
-    background: linear-gradient(207.8deg, var(--main-orange) 15%, var(--medium-orange) 100%);
+    /* background: linear-gradient(207.8deg, var(--main-orange) 15%, var(--medium-orange) 100%); */
 }
 header img{
     width: 45px;
     height: auto;
     margin-top: -10px;
 } 
+/* video{
+    width: 100%;
+    min-width: 300px;
+    max-width: 440px;
+    height: 300px;
+} */
+.header--nav-container{
+    padding-right: 35px;
+    font-weight: bold;
+    font-family: "bariolregular", sans-serif;
+}
 .bk-main{
-    background-color: var(--main-orange);
+    background-color: var(--second-yellow);
     color: whitesmoke;
 }
-.bk-main a{
+
+li a{
     color: whitesmoke;
+}
+li a:hover{
+    background-color: var(--medium-orange);
 }
 /* .header--button{
     display: inline-block;
@@ -63,24 +92,49 @@ header img{
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    padding: 0 20px;
     min-width: 288px;
     max-width: 900px;
-    height: 480px;
+    height: auto;
    
 }
-.header--title-container h1{
-    font-size: 2.4rem;
+.header--background{
+    display: block;
+    width: 100%;
+    min-width: 405px;
+    max-width: 440px;
+    height: 665px;
+    margin-top: 40px;
+    background: url("../assets/imgs/banner/lss-banner-mobil.png") center/cover no-repeat;
+}
+@media(min-width: 425px) {
+    .header--background{
+        width: 100%;
+        max-height: 250px;
+        min-width: 425px;
+        max-width: 1700px;
+        margin-top: 40px;
+        background: url("../assets/imgs/banner/lss-banner-pc.png") center/cover no-repeat;
+    }
+    /* video{
+        width: 100%;
+        min-width: 300px;
+        max-width: 440px;
+        height: 300px;
+    } */
+}
+/* .header--title-container h1{
+    font-size: 2rem;
     font-weight: bold;
-    line-height: 2.8rem;
+    line-height: 2.2rem;
     color: whitesmoke;
+    font-family: "bariolregular", sans-serif;
 }
 .header--title-container h3{
     font-size: 1.4rem;
     line-height: 2.8rem;
     font-weight: lighter;
     color: whitesmoke;
-} 
+}  */
 .header--title-container .header--button-visit{
     position: absolute;
     left: calc(50% - 80px);
@@ -107,14 +161,16 @@ main{
     display: flex;
     flex-direction: column;
     /*justify-content: center;*/
-    min-width: 320px;
+    min-width: 350px;
     height: auto;
 }
 .main--about-container{
     width: 100%;
     height: auto;
-    padding-top: 80px;
+    padding-top: 30px;
     padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
     
 }
 .main--about-container .main--about-container--content{
@@ -127,22 +183,30 @@ main{
 .main--about-container--content h3{
     color: var(--main-orange);
     margin-bottom: 10px;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    font-family: "bariolregular", sans-serif;
 }
 .main--about-container--content span{
+    font-size: 2rem;
     color: var(--medium-orange);
+    font-family: "black-carrot", sans-serif;
 }
 .main--about-container--content p{
     color: var(--text-black);
-    font-size: 1.4rem;
-    margin-bottom: 10px;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    margin: 20px 0;
+    font-family: "bariolregular", sans-serif;
 }
 .main--about-container--content h2{
     color: var(--text-black);
     margin-bottom: 10px;
-    font-size: 2rem;
+    font-size: 2.8rem;
+    font-weight: bold;
+    font-family: "bariolregular", sans-serif;
 }
 .main--about-imgs{
+    position: relative;
     display: flex;
     justify-content: flex-start;
     width: 90%;
@@ -157,7 +221,7 @@ main{
   height:180px;
   margin-bottom: 50px;
   margin-left: 10px;
-  background-image: url("./assets/imgs/640px/272723417_2791871664444845_2309426126475575764_n.jpg");
+  background-image: url("../assets/imgs/top-sellers/hyde-vape.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -168,18 +232,30 @@ main{
     height: 170px;
     margin: 0 auto;
     margin-bottom: 50px;
-    background-image: url("./assets/imgs/640px/272947505_956970044945363_449147721122569046_n.jpg");
+    background-image: url("../assets/imgs/top-sellers/disponsables-infinity.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: 0px 4px 10px rgba(31, 26, 26, 0.589);
      position: absolute;
     left: calc(70% - 80px);
-    top: 280px;
+    top: 20px;
     display: block;
     margin-top: 35px;
     padding-top: 15px;  
     margin-right: 10px;
+}
+@media(min-width:425px){
+    .main--about-imgs .backgroundWh{
+        width: 210px;
+        height:210px;
+        margin-left: 0;
+    }
+    .main--about-imgs .backgroundBl{
+        width: 210px;
+        height:210px;
+
+    }
 }
 .main--product-container{
     width: 100%;
@@ -195,26 +271,37 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
+    padding: 0 50px;
 }
 .main--product-categories h2{
     color: var(--second-yellow);
     font-size: 1.8rem;
-    font-weight: 500;
+    font-weight: bold;
+    font-family: "bariolregular", sans-serif;
 }
 .main--product{
-    width: 200px;
-    height: 210px;
+    display:inline-block;
+    width: 150px;
+    height: 160px;
     margin-bottom: 10px;
-    margin-top: 15px;
+    margin-top: 55px;
+    min-width: 150px;
+}
+@media(min-width:425px){
+    .main--product{
+        margin-right: 30px;
+    }
 }
 #hookahs{
     background: url("../assets/imgs/icons/hookah.png") center/cover no-repeat;
 }
 #cbd{
+    width: 150px;
+    height: 150px;
     background: url("../assets/imgs/icons/cbd.png") center/cover no-repeat;
 }
 #vaporizers{
-    background: url("../assets/imgs/icons/vaporizers.png") center/cover no-repeat;
+    background: url("../assets/imgs/icons/disposable.png") center/cover no-repeat;
 }
 #pipes{
     background: url("../assets/imgs/icons/pipe.png") center/cover no-repeat;
@@ -228,83 +315,8 @@ main{
 #rolling-paper{
     background: url("../assets/imgs/icons/rolling-paper.png") center/cover no-repeat;
 }
-#vape-juices{
-    background: url("../assets/imgs/icons/vape-juice.png") center/cover no-repeat;
-}
 #clothing{
     background: url("../assets/imgs/icons/clothing.png") center/cover no-repeat;
-}
-footer{
-      margin-top: 20px;
-}
-.footer--contact-container {
-    min-width: 350px;
-    height: 350px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    text-align: center;
-    background: linear-gradient(207.8deg, #91291db4 15%, #91291db4 100%),url('../assets/imgs/products/disponsables/disponsables_ame_variety_2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.footer--contact-container .footer--button{
-    /* margin-top: 50px; */
-    padding-top: 15px;
-    width: 150px;
-    height: 48px;
-    background-color:var(--second-yellow);
-    /*Shadow*/
-    box-shadow: 0px 4px 10px rgba(31, 26, 26, 0.589);
-    border: none;
-    font-size: 1.4rem;
-    font-weight: bold;
-    letter-spacing: 0.2rem;
-    text-decoration: none;
-    color: var(--soft-grey);
-}
-.footer--contact-container p{
-    margin-top: 45px;
-    font-size: 1.8rem;
-    color: var(--soft-grey);
-}
-.footer--social-icons{
-    position: relative;
-    display: flex;
-    width: 150px;
-    justify-content: space-around;
-    margin-top: 10px;
-    color: white;
-}
-.footer--info-container{
-    position: relative;
-    display: flex;
-    flex-direction:row;
-    flex-wrap: wrap; 
-    min-width: 350px;
-}
-.footer--info .footer--social-icons{
-    width: 100%;
-    margin-bottom: 15px;
-}
-.footer--info{   
-    text-align: center;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
-    background-color: var(--dark-grey);
-    width: 100%;
-    height: 200px;
-    color: var(--soft-grey);
-    font-size: 1.8rem;  
-    padding: 0 15px;
-}
-.bk-red{
-    background-color: var(--main-orange);
 }
 .main--specialities-container{
     width: 100%;
@@ -312,69 +324,112 @@ footer{
     position: relative;
     text-align: center;
     background: url("../assets/imgs/1080px/fondo_lava_large_base.png") center/cover no-repeat;
-    /* min-width: 350px; */
+    min-width: 350px; 
+    padding: 20px 10px;
 }
 .main--specialities-container h1{
     color: white;
-    font-size: 2.8rem;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: "black-carrot", sans-serif;
     padding-top: 20px;
     margin-bottom: 15px;
+    min-width: 288px;
 }
 .main--specialities-container::after{
     content:"";
     background: url("../assets/imgs/1080px/fondo_lava_large_after.png") center/cover no-repeat;
     width: 100%;
-    height: 27rem;
+    height: 280px;
     position: absolute;
     left: 0;
+    min-width: 288px;
     top:99.7%;
     z-index: -1;
     
 }
-.main--specialities{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
-    /* margin-bottom: 50%;
-    padding-bottom: 40%; */
+@media(min-width:425px){
+    .main--specialities-container::after{
+        height: 340px;
+        top: 97%;
+    }
+
 }
-.speciality-container{
-    width: auto;
+.top-seller--card{
+    width: 80%;
+    min-width: 288px;
+    max-width: 400px;
     height: auto;
-    background-color: whitesmoke;
-    border-radius: 5%;
-    padding-top: 10px;
-    padding-bottom: 25px;
-    margin: 20px 20px;
-    min-width: 350px;
+    margin: 15px auto;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
-.speciality-container img{
-    width: 150px;
-    height: 300px;
-    border-radius: 5%;
-    margin-bottom: 10px;
-    margin-top: 15px;
+.top-seller--card .top-seller-cake{
+    display:inline-block;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+    background: url('../assets/imgs/top-sellers/delta-8-cake.jpg') center/cover no-repeat;
+}
+.top-seller--card .top-seller-hyde{
+    display:inline-block;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+    background: url('../assets/imgs/top-sellers/hyde-vape.jpg') center/cover no-repeat;
+}
+.top-seller--card .top-seller-infinity{
+    display:inline-block;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+    background: url('../assets/imgs/top-sellers/disponsables-infinity.jpg') center/cover no-repeat;
+}
+.top-seller--card .top-seller-cookie{
+    display:inline-block;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+    background: url('../assets/imgs/top-sellers/skywalker-delta-8.jpg') center/cover no-repeat;
+}
+.top-seller--title{
+    margin-bottom: 15px;
+    font-size: 2rem;
+    font-family: "bariolregular", sans-serif;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--medium-orange);
 }
 .main--contact-us{
     text-align: center;
     width: 100%;
     height: auto;
-    margin-top: 260px;
+    margin-top: 280px;
     padding: 0 20px;
 }
 .main--contact-us h3{
     font-size: 2rem;
     font-weight: lighter;
+    font-family: "bariolregular", sans-serif;
     margin-bottom: 10px;
 }
 .main--contact-us h1{
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: bold;
+    font-family: "bariolregular", sans-serif;
 }
 .main--contact-us h1 span{
    font-style:oblique;
    color: var(--main-orange);
+   font-family: "black-carrot", sans-serif;
+   font-size: 2.8rem;
+}
+.footer--social-icons a{
+    text-decoration: none;
+    color: var(--main-orange);
 }
 .map-responsive{
     overflow:hidden;
@@ -393,12 +448,14 @@ footer{
 }
 .main--contact-us h2{
     color: var(--second-yellow);
-    font-size: 2.1rem
+    font-size: 2.1rem;
+    font-family: "bariolregular", sans-serif;
 }
 .main--contact-us p{
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: lighter;
     margin: 10px 0;
+    font-family: "bariolregular", sans-serif;
 }
 .main--contact-us .footer--social-icons{
     display: flex;
@@ -412,29 +469,122 @@ footer{
 .main--contact-us .footer--social-icons i{
     padding: 0 20px;
 }
+footer{
+      margin-top: 20px;
+      font-family: "bariolregular", sans-serif;
+      font-size: 2rem;
+}
+.footer--contact-container {
+    min-width: 350px;
+    height: 350px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(207.8deg, #91291db4 15%, #91291db4 100%),url('../assets/imgs/products/disponsables/disponsables_ame_variety_2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer--contact-container .footer--button{
+    /* margin-top: 50px; */
+    padding: 15px 15px;
+    width: 250px;
+    height: 50px;
+    background-color:var(--second-yellow);
+    /*Shadow*/
+    box-shadow: 0px 4px 10px rgba(31, 26, 26, 0.589);
+    border: none;
+    font-size: 1.4rem;
+    font-family: "bariolregular", sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.footer--contact-container p{
+    margin-top: 45px;
+    font-size: 1.8rem;
+    font-family: "bariolregular", sans-serif;
+    color: var(--soft-grey);
+}
+.footer--social-icons{
+    position: relative;
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+    margin-top: 10px;
+    color: white;
+}
+.footer--info-container{
+    /* position: relative;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;  */
+    min-width: 350px;
+}
+.footer--info .footer--social-icons{
+    width: 100%;
+    margin-bottom: 15px;
+}
+footer .footer--social-icons a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.footer--info{   
+    text-align: center;
+     display:flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;  
+    background-color: var(--dark-grey);
+    width: 100%;
+    height: 200px;
+    color: var(--soft-grey);
+    font-size: 1.8rem;  
+    padding: 0 15px;
+}
+.footer--info i{
+    margin-bottom: 15px;
+}
+.bk-red{
+    background-color: var(--main-orange);
+}
+
 
 .section--single-category h1{
-    font-size: 3rem;
+    font-size: 3.4rem;
     font-weight: bold;
+    font-family: "bariolregular", sans-serif;
     color: var(--main-orange);
-    margin-left: 40px;
+     margin-left: 20px; 
+     margin-top: 50px;
 }   
 
 .section--single-category {
-    padding-top: 7rem;
+    /* padding-top: 7rem;
     padding-bottom: 7rem;
     margin-left: 7rem;
-    margin-right: 7rem;
+    margin-right: 7rem; */
     position: relative;
     z-index: 2; 
+    margin: 0 20px;
 }
 #posts{
     margin: 40px 0;
     width: 100%;
+
 }
 .item .item-wrap {
     display: block;
     position: relative;
+}
+.item-wrap img{
+    width: 100%;
+    min-height: 200px;
+   
 }
 .item .item-wrap:after {
     z-index: 2;
