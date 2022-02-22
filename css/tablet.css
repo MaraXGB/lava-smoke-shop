@@ -1,9 +1,8 @@
-.header--background{
+.header--title-container{
     width: 100%;
     max-height: 400px;
     min-width: 425px;
     max-width: 1700px;
-    margin-top: 40px;
     background: url("../assets/imgs/banner/lss-banner-pc.png") center/cover no-repeat;
 }
 .main--specialities-container::after{
@@ -20,6 +19,30 @@
 }
 .map-responsive iframe{
     width: 95%;
+}
+
+.items-container{
+    flex-basis: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.item-margin{
+    width: 25%;
+}
+.item .item-wrap {
+    width: 20%;
+    height: auto;
+}
+.item .item-wrap:after {
+    width: 90%;
+}
+.item-wrap img{
+    width: 80%;
+    height: auto;
+    min-height: 200px;
+   
 }
 .footer--info-container{
     flex-basis: 100%;
