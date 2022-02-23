@@ -120,7 +120,7 @@ header img{
     max-width: 420px;
     height: 600px;
     /* margin-top: 40px; */
-    background: url("../assets/imgs/banner/lss-banner-mobil.png") center/cover no-repeat;
+    background: url("../assets/imgs/banner/lss-banner-mobil.jpg") center/cover no-repeat;
 }
 @media(min-width: 425px) {
     .header--title-container{
@@ -128,7 +128,7 @@ header img{
         max-height: 250px;
         min-width: 425px;
         max-width: 1700px;
-        background: url("../assets/imgs/banner/lss-banner-pc.png") center/cover no-repeat;
+        background: url("../assets/imgs/banner/lss-banner-pc.jpg") center/cover no-repeat;
     }
     /* video{
         width: 100%;
@@ -319,37 +319,37 @@ main{
     }
 }
 #hookahs{
-    background: url("../assets/imgs/icons/hookah.png") center/cover no-repeat;
+    background: url("../assets/imgs/icons/hookah.jpg") center/cover no-repeat;
 }
 #cbd{
     width: 150px;
     height: 150px;
-    background: url("../assets/imgs/icons/cbd.png") center/cover no-repeat;
+    background: url("../assets/imgs/icons/cbd.jpg") center/cover no-repeat;
 }
 #vaporizers{
-    background: url("../assets/imgs/icons/disposable.png") center/cover no-repeat;
+    background: url("../assets/imgs/icons/disposable.jpg") center/cover no-repeat;
 }
 #pipes{
-    background: url("../assets/imgs/icons/pipe.png") center/cover no-repeat;
+    background: url("../assets/imgs/icons/pipe.jpg") center/cover no-repeat;
 }
 #torches{
-    background: url("../assets/imgs/icons/torche.png") center/cover no-repeat;
+    background: url("../assets/imgs/icons/torche.jpg") center/cover no-repeat;
 }
 #cigarettes{
-    background: url("../assets/imgs/icons/cigarettes-package.png") center/cover no-repeat;
+    background: url("../assets/imgs/icons/cigarettes-package.jpg") center/cover no-repeat;
 }
 #rolling-paper{
-    background: url("../assets/imgs/icons/rolling-paper.png") center/cover no-repeat;
+    background: url("../assets/imgs/icons/rolling-paper.jpg") center/cover no-repeat;
 }
 #clothing{
-    background: url("../assets/imgs/icons/clothing.png") center/cover no-repeat;
+    background: url("../assets/imgs/icons/clothing.jpg") center/cover no-repeat;
 }
 .main--specialities-container{
     width: 100%;
     height: calc(auto + 300px);
     position: relative;
     text-align: center;
-    background: url("../assets/imgs/background_lava/background_lava_large_base.png") center/cover no-repeat;
+    background: url("../assets/imgs/background_lava/background_lava_large_base.jpg") center/cover no-repeat;
     min-width: 320px; 
     padding: 20px 10px;
 }
@@ -364,7 +364,7 @@ main{
 }
 .main--specialities-container::after{
     content:"";
-    background: url("../assets/imgs/background_lava/background_lava_large_after.png") center/cover no-repeat;
+    background: url("../assets/imgs/background_lava/background_lava_large_after.jpg") center/cover no-repeat;
     width: 100%;
     height: 280px;
     position: absolute;
@@ -614,7 +614,17 @@ footer .footer--social-icons a{
 .bk-red{
     background-color: var(--main-orange);
 }
-
+.video--container{
+    width: 100%;
+    height: 350px;
+    min-width: 320px;
+    overflow-x: hidden;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
 .section--single-category {
     /* padding-top: 7rem;
     padding-bottom: 7rem;
@@ -635,13 +645,6 @@ footer .footer--social-icons a{
      /* margin-left: 20px; 
      margin-top: 50px; */
 }   
-
-
-#posts{
-    /* margin: 40px auto; */
-   
-
-}
 .items-container{
     width: 100%;
     min-width: 320px;
