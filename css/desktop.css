@@ -126,5 +126,31 @@ justify-content: flex-start;
     height: auto;
     border-radius:  20px;
 }
-
+.section--single-category h1{
+    padding: 50px 0;
+    font-size: 5rem;
+    font-weight: 5.4rem;
+    font-family: "black-carrot",sans-serif;
+}
+.footer--contact-container {
+    height: 580px;
+}
+.footer--contact-container .footer--social-icons{
+    width: 300px;
+}
+@media(min-width:850px){
+    .footer--info-container p {
+        font-size: 2rem;
+        
+    }
+    .footer--contact-container p{
+        font-size: 3rem;
+        font-weight: bold;
+        letter-spacing: 0.5rem;
+    }
+    .footer--contact-container .footer--button{
+        font-size: 2rem;
+        height: 60px;
+    }
+}
   
