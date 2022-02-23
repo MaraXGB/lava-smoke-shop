@@ -3,7 +3,7 @@
     max-height: 400px;
     min-width: 425px;
     max-width: 1700px;
-    background: url("../assets/imgs/banner/lss-banner-pc.png") center/cover no-repeat;
+    background: url("../assets/imgs/banner/lss-banner-pc.jpg") center/cover no-repeat;
 }
 .main--specialities-container::after{
     height: 490px;
@@ -13,9 +13,10 @@
     padding-top: 50px;
     padding-left: 100px;
     padding-right: 100px;
+    margin-top: 400px;
 }
 .main--contact-us{
-    margin-top: 400px;
+    margin-top: 40px;
 }
 .map-responsive iframe{
     width: 95%;
