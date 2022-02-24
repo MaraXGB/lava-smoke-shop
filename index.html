@@ -15,6 +15,22 @@
     <link rel="stylesheet" href="./css/laptop.css" media="(min-width:1700px)">
 </head>
 <body>
+   
+    <div id="message-container" class="message">
+       
+        <div class="message--content">
+            <p class="answer"></p>
+            <img src="./assets/imgs/logo/logo_fluido_degradado.png" alt="Logo lava smoke shop">
+            <h2>To visit the site, you have to be older than 18 years old</h2>
+            <p>Do you have more than 18 year old?</p>
+            <!-- <input type="checkbox" id="close">
+            <l for="close" id="si">SI</l>
+            <input type="checkbox" id="keep">
+            <label for="keep" id="no">NO</label> -->
+            <button class="si" onclick="cerrar()">YES</button>
+            <button class="no" onclick="keep()">NO</button>
+        </div>
+    </div>
     <header>
         <nav class="navbar navbar-default bk-main">
             <div class="container-fluid header--nav-container">
@@ -72,13 +88,15 @@
             <!-- <a href="category.html?category=hookah" class="header--button-visit">Visit us!</a> -->
         </div> 
     </header>
+ 
     <main>
+        
         <section id="find-us" class="main--contact-us">
             <h3>Where to find us</h3>
             <h1><span>Lava Smoke Shop</span> Location</h1>
             <div class="find-us-container">
                 <div class="map-responsive">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3507.1940385522507!2d-81.3983783!3d28.4737025!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77d26b9faa799%3A0xa89def2bf2141460!2sLAVA%20SMOKE%20SHOP!5e0!3m2!1sen!2sco!4v1645651974591!5m2!1sen!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe title="Lava Smoke Shop address Orlando" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3507.1940385522507!2d-81.3983783!3d28.4737025!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77d26b9faa799%3A0xa89def2bf2141460!2sLAVA%20SMOKE%20SHOP!5e0!3m2!1sen!2sco!4v1645651974591!5m2!1sen!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
                 <div class="find-us-content">
                     <h2>Get in touch</h2>
@@ -104,42 +122,46 @@
             </div>
             <div class="main--product-categories">
                 <div class="product--category">
-                    <span id="hookahs" class="main--product"></span>
+                    <a href="category.html?category=hookah"><span id="hookahs" class="main--product"></span></a>
                     <h2>HOOKAH</h2>
                 </div>
                 <div>
-                    <div id="cbd" class="main--product"></div>
+                    <a href="category.html?category=cbd"><div id="cbd" class="main--product"></div></a>
                     <h2>CBD</h2>
                 </div>
                 <div>
-                    <div id="vaporizers" class="main--product"></div>
+                    <a href="category.html?category=vapes"><div id="vaporizers" class="main--product"></div></a>
                     <h2>VAPORIZER</h2>
                 </div>
                 <div>
-                    <div id="pipes" class="main--product"></div>
+                    <a href="category.html?category=glass"><div id="pipes" class="main--product"></div></a>
                     <h2>PIPE</h2>
                 </div>
                 <div>
-                    <div id="torches" class="main--product"></div>
+                    <a href="category.html?category=torches"><div id="torches" class="main--product"></div></a>
                     <h2>TORCH</h2>
                 </div>
                 <div>
-                    <div id="cigarettes" class="main--product"></div>
+                    <a href="category.html?category=cigarillos"><div id="cigarettes" class="main--product"></div></a>
                     <h2>CIGARRILLOS</h2>
                 </div>
                 <div>
-                    <div id="rolling-paper" class="main--product"></div>
+                    <a href="category.html?category=rolling-paper"><div id="rolling-paper" class="main--product"></div></a>
                     <h2>ROLLING PAPER</h2>
                 </div>
                 <div>
-                    <div id="clothing" class="main--product"></div>
+                    <a href="category.html?category=clothing"><div id="clothing" class="main--product"></div></a>
                     <h2>CLOTHING</h2>
                 </div>
             </div>
         </section>
-        <section class="video--container">
-            <video src="./assets/anim.mp4" type = "video/mp4" autoplay loop></video>
-        </section>
+        <!-- <section class="video--container">
+            <video autoplay loop>
+                <source src="./assets/anim.mp4" type="video/mp4">
+                <source src="./assets/anim.ogg" type="video/ogg">
+                <source src="./assets/anim.webm" type="video/webm">
+            </video>
+        </section> -->
         <section id="top-sellers" class="main--specialities-container">
             <h1>TOP SELLERS</h1>
             <section class="cards--container">
@@ -211,5 +233,19 @@
     <script src="./js/jquery-3.6.0.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+    <script>
+        // var btnSi = document.getElementsByClassName('.si');
+        // var messg = document.getElementByClassName('message');
+        function cerrar(){
+            console.log("click");
+            $(".message").css("display", "none");
+            
+           // messg.style.display=none;
+        }
+       function keep(){
+           $(".answer").html("Please come back when you birth 18 years old");
+           $(".answer").css("visibility", "visible");
+       }
+    </script>
 </body>
 </html>

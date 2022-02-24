@@ -8,7 +8,7 @@
     width: 100%;
     margin-left: 0;
     min-width: 750px;
-    height: 800px;
+    height: 900px;
 }
 /* .header--background{
     width: 100%;
@@ -189,4 +189,14 @@ justify-content: flex-start;
     margin-bottom: 20px;
     margin-top: 85px;
     min-width: 300px;
+}
+.video--container{
+    height: 600px;
+}
+.message--content{
+    width: 30%;
+}
+.message--content img{
+    width: 57%;
+    height: auto;
 }
