@@ -156,7 +156,9 @@ header img{
 .navbar-default .navbar-nav>li>a{
     color: whitesmoke;
 }
-
+.dropdown-menu {
+    background-color: var(--soft-orange);
+}
 .navbar-default .navbar-nav>li>a:focus{
     color: var(--second-yellow);
 }
@@ -736,6 +738,7 @@ footer .footer--social-icons a{
     width: 100%;
     min-width: 320px;
     height: auto;
+    overflow: hidden;
     margin: 0;
     position: relative;
     display: flex;
@@ -756,7 +759,6 @@ footer .footer--social-icons a{
     width: 80%;
     height: auto;
     min-height: 200px;
-   
 }
 .item .item-wrap:after {
     z-index: 2;
